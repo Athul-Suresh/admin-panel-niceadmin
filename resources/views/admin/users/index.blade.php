@@ -6,7 +6,10 @@
        <div class="row">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">{{ __('Users') }}</div>
+                <div class="card-header d-flex justify-content-between">
+                    <h4>Users</h4>
+                        <a class="btn btn-primary text-white" href="{{route('user.create')}}">Add</a>
+                </div>
 
                 <div class="card-body">
                     @if (session('status'))
